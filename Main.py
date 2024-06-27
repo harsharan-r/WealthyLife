@@ -8,13 +8,6 @@ pygame.mixer.init()
 
 #setting game and menu variables
 game_state = True
-score = [0,0]
-background_music = pygame.mixer.Sound(os.path.join("Assets","dj quads - its near.mp3"))
-
-#intializing instances for game logic and menu button logic
-Start_Text = 'Start Game'
-Start_Game_Button = Button([600,200],[width/2,height/2],Start_Text,100,20)
-game = Game(score)
 
 #adding window name
 pygame.display.set_caption("Wealthy Life")
@@ -36,29 +29,6 @@ while True:
 	
 	
 	
-	#------------------------------------------------------------------------------------------------------
-
-	#Use this code for starting button after your done the entire game
-
-	# if not game_state:	
-	# 	if Start_Game_Button.draw():
-	# 		#game_state = True
-	# 		#we can set game state to true once we have changed the code
-	# 		pass
-
-
-	# if game_state:
-
-	# 	update_value = game.update()
-
-	# 	if update_value == 1:
-	# 		Start_Game_Button.clicked = False
-	# 		game_state = False
-	# 		game = Game([0,0])
-
-	# 	elif update_value == 2:
-
-	# 		game = Game(game.score)
 
 	pygame.display.update()
 	
